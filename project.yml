@@ -1,0 +1,20 @@
+name: MarketPulse
+options:
+  bundleIdPrefix: com.prajith
+  deploymentTarget:
+    iOS: "17.0"
+packages:
+  MarketPulse:
+    path: .
+targets:
+  MarketPulseApp:
+    type: application
+    platform: iOS
+    sources:
+      - App
+    dependencies:
+      - package: MarketPulse
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.prajith.MarketPulse
